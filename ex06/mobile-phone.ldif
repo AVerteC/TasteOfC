@@ -1,4 +1,0 @@
-dn: uid=alanchen,ou=june,ou=2017,ou=people,dc=42,dc=us,dc=org
-changetype: modify
-replace: mobile
-mobile: (+1) 5103713072 

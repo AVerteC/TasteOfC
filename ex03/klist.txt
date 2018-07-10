@@ -1,6 +1,0 @@
-Credentials cache: API:25372
-        Principal: alanchen@42.US.ORG
-
-  Issued                Expires               Principal
-Jul  9 14:23:19 2018  Jul 10 00:23:19 2018  krbtgt/42.US.ORG@42.US.ORG
-Jul  9 14:26:30 2018  Jul 10 00:23:19 2018  host/vgs-fn1.42.us.org@42.US.ORG
