@@ -23,3 +23,5 @@ int main(void){
     ft_is_negative(-100);
     ft_is_negative(0);
 }
+
+// input of zero returns nothing
