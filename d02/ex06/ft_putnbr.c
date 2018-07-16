@@ -6,42 +6,46 @@ int ft_putchar(char c)
 	return 0;
 }
 
+
+    void     ft_putstr(char *str)
+{
+        int i;
+
+        i = 0;
+        while (str[i] != '\0') 
+        {
+                ft_putchar(str[i]);    
+                i++;
+        }  
+}
+
+
 void ft_putnbr(int nb)
 {
-    if (nb == 0)
-    {
-        ft_putchar('0');
-    }
-    
-    /*
-    if (nb < 0)
-    {
-        ft_putchar('-');
-        nb = -nb;
-    }
-    */
+	if (nb == -2147483648)
+	{
+		ft_putchar('-');
+		ft_putstr("2147483648");
+	}
+	if (nb == 2147483647)
+	{
+		ft_putstr("2147483647");
+	}
 
-    if (nb > 0 && nb <=9)
-    {
-        ft_putchar(nb);
-    }
-    
-    if(nb/10)
-        ft_putchar(nb%10 + '0')
-
-
-
+	else
+	{
+		nb += '0';
+		char a = nb;
+		ft_putstr(a);
+	}
 
 }
 
 
+
+
 int main(void)
 {
-    ft_putnbr(0);
-    ft_putchar('\n');
-    ft_putnbr(9);
-    ft_putchar('\n');
-    ft_putnbr(-100);
-    ft_putchar('\n');
-    ft_putnbr(34897);
+    ft_putnbr(2147483647);
+    
 }
